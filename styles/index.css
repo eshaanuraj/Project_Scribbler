@@ -1,0 +1,82 @@
+body{
+    height: 100%;    
+}
+
+.bodybg {
+    /* Background image */
+    background-image: url(../images/background.jpg);
+    height: 100%;
+    background-position-x: center;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#scribblerText {    
+    font-family: 'Montez', cursive; 
+    color: blue;
+}
+
+#tagLine {    
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;     
+    font-size: large; 
+    font-weight: 200;
+    
+}
+
+#headingText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    line-height: 0px;    
+}
+
+.btnSign {
+    
+    background-color: blue;
+    color: #fff;    
+    margin: 5px;
+    font-size: 14px;
+    border: solid;
+    border: 2px;
+    border-style: solid;
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left:18px;
+    padding-right:18px;
+    border-color: silver;
+}
+
+#btnPostsGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 179px;
+
+}
+
+.btnPosts{   
+    background-color: orange;
+    color: black;    
+    margin: 10px;
+    font-size: 14px;
+    border: solid;
+    border: 2px;
+    width: 125px;
+    border-style: solid;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-color: silver;
+
+}
