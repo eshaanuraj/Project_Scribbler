@@ -18,33 +18,37 @@ body{
     justify-content: space-between;
 }
 
-#scribblerText {    
-    font-family: 'Montez', cursive; 
-    color: blue;
-}
-
 #tagLine {    
-    font-family: 'Ubuntu Mono', monospace;
-    color: black;     
-    font-size: large; 
-    font-weight: 200;
-    
-}
-
-#headingText {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-content: stretch;
     justify-content:flex-start;
-    line-height: 0px;    
+    font-family: 'Roboto', sans-serif;
+    color: rgb(170, 15, 41);     
+    font-size:26px; 
+    font-weight: bold;
+    line-height: 2px; 
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+#headingText {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(10, 2, 3);     
+    font-size:48px; 
+    font-weight: bold;
+    
 }
 
 .btnSign {
     
-    background-color: blue;
+    background-color: #a09719;
     color: #fff;    
     margin: 5px;
+    font-family:'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: bold;
     border: solid;
     border: 2px;
     border-style: solid;
@@ -52,7 +56,8 @@ body{
     padding-bottom:9px;
     padding-left:18px;
     padding-right:18px;
-    border-color: silver;
+    border-color:#a09719;
+    border-radius: 12px;
 }
 
 #btnPostsGroup{
@@ -65,18 +70,41 @@ body{
 }
 
 .btnPosts{   
-    background-color: orange;
-    color: black;    
-    margin: 10px;
-    font-size: 14px;
-    border: solid;
-    border: 2px;
-    width: 125px;
-    border-style: solid;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-    border-color: silver;
-
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    border-radius: 25px;
 }
+.btnRound{   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    background-color: #e6d816;
+    border: none;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+}
+.column {
+    float: left;
+    width: 26%;
+    padding: 1px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
