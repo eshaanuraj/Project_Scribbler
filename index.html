@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="column" >
                    <!-- <span class="btnRound"></span>-->
-                   <img height="65px" width="65"  src="./images/sketch_icon.png" >
+                   <img height="50px" width="50px"  src="./images/sketch_icon.png" >
                 </div>
                 <div class="column">
                     <span class="headingText" >ScriBBler</span>
@@ -31,14 +31,59 @@
             </div>
         </div>
         <div id="btnSignGroup">
-            <button class="btnSign">Sign Up</button>
-            <button class="btnSign">Sign In</button>
+            <button class="btnSign" onclick="showModalSignUp()">Sign Up</button>
+            <button class="btnSign" onclick="showModalSignIn()">Sign In</button>
         </div>
     </div>
     <div id=btnPostsGroup>
         <button class="btnPosts">All Posts</button>
         <button class="btnPosts">Create Post</button>
     </div>
+
+        <!-- Code for Sign Up modal popup -->
+        <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Join Us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-group">
+                                        <label for="exampleInputName1">Enter your Name</label>
+                                        <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailName" placeholder="Enter Name">
+                                      </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Enter your Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Enter a Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">Confirm Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-enter Password">
+                                      </div>
+                                <div class="form-group form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </form>
+                </div>
+                <div class="modal-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+       <!-- Link Javascript for signIn and signUp modals  -->
+          <script src="./scripts/index.js"></script>
 </body>
 
 </html>
