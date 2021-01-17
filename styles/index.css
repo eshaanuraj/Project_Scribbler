@@ -24,7 +24,7 @@ body{
     align-items: flex-start;
     align-content: stretch;
     justify-content:flex-start;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     color: rgb(170, 15, 41);     
     font-size:26px; 
     font-weight: bold;
@@ -34,8 +34,8 @@ body{
 }
 
 #headingText {
-    font-family: 'Roboto', sans-serif;
-    color: rgb(10, 2, 3);     
+    font-family: 'Montez', cursive; 
+    color: blue;     
     font-size:48px; 
     font-weight: bold;
     
@@ -43,7 +43,7 @@ body{
 
 .btnSign {
     
-    background-color: #a09719;
+    background-color: blue;
     color: #fff;    
     margin: 5px;
     font-family:'Roboto', sans-serif;
@@ -83,12 +83,13 @@ body{
     margin: 4px 2px;
     border-radius: 25px;
 }
+/*
 .btnRound{   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-content: center;
-    background-color: #e6d816;
+    background-color: blue;
     border: none;
     padding: 30px;
     text-align: center;
@@ -96,6 +97,7 @@ body{
     display: inline-block;
     border-radius: 50px;
 }
+*/
 .column {
     float: left;
     width: 26%;
