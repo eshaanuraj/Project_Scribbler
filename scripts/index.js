@@ -29,7 +29,7 @@ function showModalSignIn(){
     modal.style.display = "none";
   }
   
-  function navigateToBlogList(){
-    location.href = "html/bloglist.html"
+  function navigateToPostList(){
+    location.href = "html/postslist.html"
   }
   

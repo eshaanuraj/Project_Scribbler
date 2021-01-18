@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/f499a276b4.js"></script>
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!-- Link the Style sheet file -->
+    <link rel="stylesheet" href="../styles/index.css" type='text/css'>
+    <link rel="stylesheet" href="../styles/bloglist.css" type='text/css'>
+</head>
+
+<body >
+    <!-- TODO: Include code for header here -->
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div id="header">
+        <div id="headingText">
+            <div class="row">
+                <div class="column" >
+                   <!-- <span class="btnRound"></span>-->
+                   <img height="50px" width="50px"  src="../images/sketch_icon.png" >
+                </div>
+                <div class="column">
+                    <span class="headingText" >ScriBBler</span>
+                </div>
+    
+            </div>
+            <div id="tagLine">
+                <span >Explore, Imagine, Create</span>
+            </div>
+        </div>
+        <div id="btnSignGroup">
+            <button class="btnSign" onclick="showModalSignUp()">Sign Up</button>
+            <button class="btnSign" onclick="showModalSignIn()">Sign In</button>
+        </div>
+    </div>
+    <!-- Code for Sign Up modal popup -->
+    <div>
+        <div class="modal" id="modal-signup">
+            <div class="modal-content">
+      
+            <div class="modal-head">
+                <span onclick="closeSignUpModal()" id="close" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <h2 class="modal-title">Get Started</h2>
+            </div>
+            <hr>
+            <form>
+                <label for="fullname" class="label-text">Full name</label>
+                <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Html code for Sign In modal -->
+        <div class="modal" id="modal-signin">
+          <div class="modal-content">
+  
+          <div class="modal-head">
+            <span onclick="closeSignInModal()" id="close" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <h2 class="modal-title">Welcome Back!</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="username" class="label-text">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <label for="password" class="label-text">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+          </form>
+  
+          <p class=bottom-banner>Not a member?<span onclick="closeSignInModal();showModalSignUp()" class=signup>Sign Up</span></p>
+        </div>
+        </div>
+      </div>
+      
+
+    <script src="../scripts/index.js">  </script>
+</body>
+</html>
