@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/f499a276b4.js"></script>
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!-- Link the Style sheet file -->
+    <link rel="stylesheet" href="../styles/index.css" type='text/css'>
+    <link rel="stylesheet" href="../styles/post.css" type='text/css'>
+</head>
+
+<body >
+    <!-- TODO: Include code for header here -->
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div id="header">
+        <div id="headingText">
+            <div class="row">
+                <div class="column" >
+                   <!-- <span class="btnRound"></span>-->
+                   <img height="50px" width="50px"  src="../images/sketch_icon.png" >
+                </div>
+                <div class="column">
+                    <span class="headingText" >ScriBBler</span>
+                </div>
+    
+            </div>
+            <div id="tagLine">
+                <span >Explore, Imagine, Create</span>
+            </div>
+        </div>
+        <div id="btnSignGroup">
+            <button class="btnSign" onclick="showModalSignUp()">Sign Up</button>
+            <button class="btnSign" onclick="showModalSignIn()">Sign In</button>
+        </div>
+    </div>
+    <!-- Code for Sign Up modal popup -->
+    <div>
+        <div class="modal" id="modal-signup">
+            <div class="modal-content">
+      
+            <div class="modal-head">
+                <span onclick="closeSignUpModal()" id="close" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <h2 class="modal-title">Get Started</h2>
+            </div>
+            <hr>
+            <form>
+                <label for="fullname" class="label-text">Full name</label>
+                <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Html code for Sign In modal -->
+        <div class="modal" id="modal-signin">
+          <div class="modal-content">
+  
+          <div class="modal-head">
+            <span onclick="closeSignInModal()" id="close" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <h2 class="modal-title">Welcome Back!</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="username" class="label-text">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <label for="password" class="label-text">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+          </form>
+  
+          <p class=bottom-banner>Not a member?<span onclick="closeSignInModal();showModalSignUp()" class=signup>Sign Up</span></p>
+        </div>
+        </div>
+      </div>
+      <div class="postMainLayout">
+
+
+        <div class="postContent">
+            <div id="postTitle" class="blogTite">
+                <h id="postTitleNew">The legacy of Jimi Hendrix</h>
+            </div>
+        </div>
+        <div class="postAuthor">
+
+            <!-- Insert code for Edit/Save button and  -->
+            <p class="postAuthorNew">Jimi</p>
+            <div id="editPost" onclick="toggleEditSave()">
+                    <button class="editPost" id ="editPostBtn">Edit
+                            <i style="font-size: 14px;font-weight: bolder;" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button>
+                    
+            </div>
+            
+        </div>
+
+        <div class="postText" id="postBodyId">
+            <p id="postBody">
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary
+                of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
+                and creative application of such effects as distortion forever transformed the sound of rock and roll. While
+                creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues,
+                R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored
+                overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable
+                technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348]
+                He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the
+                low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little
+                Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been
+                described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers
+                playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability
+                to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was
+                performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music
+                recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+                as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix
+                turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with
+                which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after
+                Hendrix."
+            </p>
+        </div>
+        <div>
+        <button class="likePost" onclick="incrementCounter()">Like
+            <i style="font-size: 14px;font-weight: bolder;" class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+        </button>
+        <p style="font-size: 14px; font-family: 'Roboto', sans-serif;padding-left: 5px">
+            <span style="font-size: 14px; font-family: 'Roboto', sans-serif;padding-left: 5px" id="counterLikedBy"></span></p>
+        <div id="likedDefault" style="font-family: 'Roboto', sans-serif; padding-left: 5px">Be the first one to like this!</div>
+    </div>
+    <div class="commentPost">
+        <textarea id="txtCommentPost" class="commentPost" rows="4" cols="100" placeholder="Leave a comment"></textarea>
+    </div>
+        <button class="likePost" onclick="addComment()">Comment</button>
+        <div class="commentSection">
+            <h3>All Comments</h3>
+            <div class="allComments" id="listAllComments"> </div>
+        </div>
+
+    </div>
+    <script src="../scripts/index.js">  </script>
+    <script src="../scripts/post.js"></script>
+</body>
+</html>

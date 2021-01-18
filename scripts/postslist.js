@@ -25,5 +25,6 @@ var deleteFunction = function(numberOfPosts) {
 deleteFunction(5)
 
 function showMore() {
-    location.href = "bloglist.html";
+    alert(postTag.value);
+    location.href = "post.html";
 }

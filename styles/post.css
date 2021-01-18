@@ -1,0 +1,95 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    background-color: white;
+  }
+  .postTitle {
+    padding-top: 20px;;
+    display: table-row;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.postText {
+    display: table-row;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display:table-row;
+    justify-content: space-between;
+}
+.postAuthor {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display:table-row;
+    justify-content: space-between;
+}
+p#postBody {
+  padding-left: 20px;
+  text-align: justify;
+}
+.postContent{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display:table-row;
+    text-align: center;
+    justify-content: space-between;
+}
+.postMainLayout{
+    display: flex;
+    flex-direction: row;
+    display:table;
+}
+.postAuthorNew{
+    display:table-cell;
+    text-align: left;
+    padding-left: 5px;
+}
+.editPost{
+    color:white;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    margin-right: 45px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px;
+    font-size: 14px;
+    display:table-cell;
+    text-align: center;
+    width:70px;
+  }
+  .likePost{
+    color:white;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    font-family: 'Abel', sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    font-family: Abel;
+    padding: 5px 18px;
+    font-size: 18px;
+    display:table-cell;
+    text-align: right;
+  }
+  .commentPost {
+    padding-left: 5px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .txtPostContent{
+    display:table-cell;
+    overflow: scroll;
+  }
